@@ -9,7 +9,7 @@ import json
 
 import sys
 
-tf.app.flags.DEFINE_string('train_dir', '/home/dpressel/dev/work/AgeGenderDeepLearning/Folds/tf/test_fold_is_0',
+tf.app.flags.DEFINE_string('train_dir', '../datasets/fold_0_data',
                            'Training directory (where training data lives)')
 
 tf.app.flags.DEFINE_integer('run_id', 0,
@@ -18,7 +18,7 @@ tf.app.flags.DEFINE_integer('run_id', 0,
 tf.app.flags.DEFINE_string('device_id', '/cpu:0',
                            'What processing unit to execute inference on')
 
-tf.app.flags.DEFINE_string('eval_dir', '/home/dpressel/dev/work/AgeGenderDeepLearning/Folds/tf/eval_test_fold_is_0',
+tf.app.flags.DEFINE_string('eval_dir', '../dataset/fold_0_data',
                            'Directory to put output to')
 
 tf.app.flags.DEFINE_string('eval_data', 'valid',
