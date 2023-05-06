@@ -6,11 +6,8 @@ import numpy as np
 import tensorflow as tf
 import os
 import json
-import samplerr
-import sys
 
-samplerr.eval()
-sys.exit()
+import sys
 
 tf.app.flags.DEFINE_string('train_dir', '/home/dpressel/dev/work/AgeGenderDeepLearning/Folds/tf/test_fold_is_0',
                            'Training directory (where training data lives)')
